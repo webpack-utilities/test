@@ -1,0 +1,39 @@
+{
+  "name": "@webpack-utilities/test",
+  "version": "0.0.1",
+  "description": "webpack Test Utils",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">= 8"
+  },
+  "dependencies": {
+    "del": "^3.0.0",
+    "memory-fs": "^0.4.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.0",
+    "del-cli": "^1.0.0",
+    "jest": "^23.0.0",
+    "standard": "^11.0.0",
+    "standard-version": "^4.0.0"
+  },
+  "peerDependencies": {
+    "webpack": "^3.0.0 || ^4.0.0",
+    "jsdom": "^11.0.0"
+  },
+  "scripts": {
+    "lint": "standard --env jest",
+    "test": "jest --verbose --coverage",
+    "clean": "del-cli coverage",
+    "release": "commitlint --to 'HEAD' && standard-version"
+  },
+  "author": "Michael Ciniawsky (@michael-ciniawsky) <michael.ciniawsky@gmail.com>",
+  "bugs": "https://github.com/webpack-utilities/test/issues",
+  "homepage": "https://github.com/webpack-utilities/test",
+  "repository": "https://github.com/webpack-utilities/test.git",
+  "license": "MIT"
+}
