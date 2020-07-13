@@ -19,7 +19,7 @@
     "del-cli": "^1.0.0",
     "jest": "^23.0.0",
     "standard": "^11.0.0",
-    "standard-version": "^4.0.0"
+    "standard-version": "^8.0.1"
   },
   "peerDependencies": {
     "webpack": "^3.0.0 || ^4.0.0",
